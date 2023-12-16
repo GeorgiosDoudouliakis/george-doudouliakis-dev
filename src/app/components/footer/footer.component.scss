@@ -1,0 +1,29 @@
+:host {
+  padding: var(--padding-main);
+
+  p {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+
+    > span {
+      margin-bottom: 10px;
+    }
+
+    > a {
+      text-decoration: underline;
+    }
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      > span {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
