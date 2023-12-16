@@ -3,7 +3,8 @@
   --secondary-color: #fff;
   --bg-color: #fafafa;
   --hover-color: #003D9E;
-  --padding-main: 12px 16px;
+  --main-padding: 12px 16px;
+  --container-padding: 25px 0;
 }
 
 * {
@@ -26,11 +27,11 @@ button {
   border: none;
   transition: .4s ease-in-out;
   &:not(:has( > a)) {
-    padding: var(--padding-main);
+    padding: var(--main-padding);
   }
   &:has(> a) {
     & > a {
-      padding: var(--padding-main);
+      padding: var(--main-padding);
     }
   }
   &:hover:not(:has(>a)) {

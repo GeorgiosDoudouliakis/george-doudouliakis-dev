@@ -1,12 +1,11 @@
 :host {
-  padding: var(--padding-main);
-
   p {
     display: flex;
     flex-direction: column;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
+    padding: var(--container-padding);
 
     > span {
       margin-bottom: 10px;
