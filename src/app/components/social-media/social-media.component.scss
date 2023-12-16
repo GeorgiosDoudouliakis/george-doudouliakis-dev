@@ -17,7 +17,7 @@
         width: 28px;
         height: 28px;
 
-        &:first-of-type {
+        &:not(:last-of-type) {
           margin-right: 10px;
         }
       }
