@@ -10,6 +10,7 @@
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  color: var(--primary-color);
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -27,6 +28,11 @@ button {
   &:not(:has( > a)) {
     padding: var(--padding-main);
   }
+  &:has(> a) {
+    & > a {
+      padding: var(--padding-main);
+    }
+  }
   &:hover:not(:has(>a)) {
     background: var(--hover-color);
   }
@@ -38,19 +44,13 @@ li {
 
 a {
   display: inline-block;
-  padding: var(--padding-main);
   text-decoration: none;
-  transition: .4s ease-in-out;
-  &:hover {
-    color: var(--secondary-color);
-    background: var(--primary-color);
-  }
+  cursor: pointer;
 }
 
-/* Mixins */
-@mixin flex($direction, $wrap, $justify, $align) {
-  display: flex;
-  flex-wrap: $wrap;
-  justify-content: $justify;
-  align-items: $align;
+/* Reusable Classes */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
 }
