@@ -1,26 +1,35 @@
 :host {
-  p {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    text-align: center;
-    padding: var(--container-padding);
+  div {
+    background: var(--primary-color);
 
-    > span {
-      margin-bottom: 10px;
-    }
+    p {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      text-align: center;
+      padding: var(--container-padding);
 
-    > a {
-      text-decoration: underline;
-    }
-
-    @media(min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      > span,
+      > a {
+        color: var(--secondary-color);
+      }
 
       > span {
-        margin-bottom: 0;
+        margin-bottom: 10px;
+      }
+
+      > a {
+        text-decoration: underline;
+      }
+
+      @media(min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > span {
+          margin-bottom: 0;
+        }
       }
     }
   }
