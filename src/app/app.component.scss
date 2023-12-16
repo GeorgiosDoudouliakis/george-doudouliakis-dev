@@ -1,0 +1,9 @@
+:host {
+   main {
+     min-height: calc(100vh - 313px);
+
+     @media(min-width: 768px) {
+      min-height: calc(100vh - 287px);
+     }
+  }
+}
