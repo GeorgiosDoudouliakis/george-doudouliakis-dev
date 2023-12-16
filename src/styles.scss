@@ -2,6 +2,7 @@
   --primary-color: #006894;
   --secondary-color: #fff;
   --bg-color: #fafafa;
+  --hover-color: #003D9E;
   --padding-main: 12px 16px;
 }
 
@@ -26,6 +27,9 @@ button {
   &:not(:has( > a)) {
     padding: var(--padding-main);
   }
+  &:hover:not(:has(>a)) {
+    background: var(--hover-color);
+  }
 }
 
 li {
@@ -36,6 +40,11 @@ a {
   display: inline-block;
   padding: var(--padding-main);
   text-decoration: none;
+  transition: .4s ease-in-out;
+  &:hover {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+  }
 }
 
 /* Mixins */
