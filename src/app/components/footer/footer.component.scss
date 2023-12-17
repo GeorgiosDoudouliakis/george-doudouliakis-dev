@@ -1,6 +1,7 @@
 :host {
   div {
     background: var(--primary-color);
+    border-top: 1px solid var(--secondary-color);
 
     p {
       display: flex;

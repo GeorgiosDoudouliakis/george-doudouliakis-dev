@@ -3,23 +3,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--bg-color);
+    background: var(--primary-color);
     padding: var(--container-padding);
 
     > h2 {
       margin-bottom: 15px;
+      color: var(--secondary-color);
     }
 
     .social-media-container {
       display: flex;
 
       > .img-container {
-        width: 28px;
-        height: 28px;
-        transition: .4s ease-in-out;
+        position: relative;
+        width: 38px;
+        height: 38px;
+        padding: 5px;
+        background: var(--bg-color);
 
-        &:hover {
-          transform: rotate(360deg) scale(1.5);
+        &::after {
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          content: "";
+          width: 30px;
+          height: 30px;
+          border: 2px solid var(--primary-color);
+        }
+
+        > img {
+          position: relative;
+          z-index: 1;
+          transition: .4s ease-in-out;
+        }
+
+        &:hover > img {
+          transform: rotate(360deg) scale(1.2);
         }
 
         &:not(:last-of-type) {
