@@ -1,6 +1,8 @@
+/* Global Styles */
 :root {
   --primary-color: #4831D4;
   --secondary-color: #CCF381;
+  --font-color: #6e5087;
   --bg-color: #fafafa;
   --hover-color: #361ECC;
   --main-padding: 8px 16px;
@@ -21,7 +23,14 @@ body {
   height: 100%;
 }
 
-/* Global Overwrites */
+h1, h2, h3, h4 {
+  color: var(--primary-color);
+}
+
+p, span {
+  color: var(--font-color);
+}
+
 button {
   color: var(--secondary-color);
   background: var(--primary-color);
