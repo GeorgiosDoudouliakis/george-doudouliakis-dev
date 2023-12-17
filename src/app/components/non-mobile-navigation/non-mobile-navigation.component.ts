@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
-  selector: 'gd-nav',
+  selector: 'gd-non-mobile-navigation',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss'
+  templateUrl: './non-mobile-navigation.component.html',
+  styleUrl: './non-mobile-navigation.component.scss'
 })
 export class NonMobileNavigationComponent {}

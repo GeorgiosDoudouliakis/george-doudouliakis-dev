@@ -4,11 +4,11 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
 import { NonMobileNavigationComponent } from "../non-mobile-navigation/non-mobile-navigation.component";
 
 @Component({
-  selector: 'gd-mobile-nav',
+  selector: 'gd-mobile-navigation',
   standalone: true,
   imports: [NgClass, RouterLink, RouterLinkActive, NonMobileNavigationComponent],
-  templateUrl: './mobile-nav.component.html',
-  styleUrl: './mobile-nav.component.scss'
+  templateUrl: './mobile-navigation.component.html',
+  styleUrl: './mobile-navigation.component.scss'
 })
 export class MobileNavigationComponent {
   public isMobileMenuActive: WritableSignal<boolean> = signal<boolean>(false);
