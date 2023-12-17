@@ -1,0 +1,26 @@
+<div class="mobile-menu-icon" (click)="toggleMobileMenu()" [ngClass]="{ 'active': isMobileMenuActive() }">
+  <div class="mobile-menu-icon-line">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu-icon-line">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu-icon-line">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<nav [ngClass]="{ 'active': isMobileMenuActive() }">
+  <ul>
+    <li (click)="toggleMobileMenu()"><a routerLink="/" routerLinkActive="active-link">Home</a></li>
+    <li (click)="toggleMobileMenu()"><a routerLink="/about" routerLinkActive="active-link">About</a></li>
+    <li (click)="toggleMobileMenu()"><a routerLink="/experience" routerLinkActive="active-link">Experience</a></li>
+    <li (click)="toggleMobileMenu()"><a routerLink="/experience" routerLinkActive="active-link">Projects</a></li>
+  </ul>
+</nav>
