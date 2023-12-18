@@ -1,18 +1,12 @@
 :host {
   .intro {
-    span, h1, p {
-      display: block;
-    }
-
-    span, h1 {
-      font-size: 30px;
-    }
-
-    span {
+    h1 {
+      font-weight: 900;
       margin-bottom: 5px;
     }
 
-    h1 {
+    h2 {
+      font-weight: 500;
       height: 34px;
       margin-bottom: 10px;
     }
