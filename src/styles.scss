@@ -4,7 +4,6 @@
   --secondary-color: #CCF381;
   --font-color: #6e5087;
   --bg-color: #fafafa;
-  --hover-color: #361ECC;
   --main-padding: 8px 16px;
   --container-padding: 25px 0;
 }
@@ -27,25 +26,33 @@ h1, h2, h3, h4 {
   color: var(--primary-color);
 }
 
-p, span {
-  color: var(--font-color);
-}
-
 button {
-  color: var(--secondary-color);
-  background: var(--primary-color);
+  color: var(--primary-color);
+  background: var(--secondary-color);
   border: none;
   transition: .4s ease-in-out;
+
   &:not(:has( > a)) {
     padding: var(--main-padding);
   }
+
   &:has(> a) {
     & > a {
+      color: var(--primary-color);
+      background: var(--secondary-color);
       padding: var(--main-padding);
+      transition: .4s ease-in-out;
+
+      &:hover {
+        color: var(--secondary-color);
+        background: var(--primary-color);
+      }
     }
   }
+
   &:hover:not(:has(>a)) {
-    background: var(--hover-color);
+    color: var(--secondary-color);
+    background: var(--primary-color);
   }
 }
 
