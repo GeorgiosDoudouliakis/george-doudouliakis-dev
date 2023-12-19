@@ -27,32 +27,28 @@ h1, h2, h3, h4 {
 }
 
 button {
-  color: var(--primary-color);
-  background: var(--secondary-color);
   border: none;
+  padding: var(--main-padding);
   transition: .4s ease-in-out;
 
-  &:not(:has( > a)) {
-    padding: var(--main-padding);
-  }
+  &.primary-btn {
+    color: var(--primary-color);
+    background: var(--secondary-color);
 
-  &:has(> a) {
-    & > a {
-      color: var(--primary-color);
-      background: var(--secondary-color);
-      padding: var(--main-padding);
-      transition: .4s ease-in-out;
-
-      &:hover {
-        color: var(--secondary-color);
-        background: var(--primary-color);
-      }
+    &:hover:not(:has(>a)) {
+      color: var(--secondary-color);
+      background: var(--primary-color);
     }
   }
 
-  &:hover:not(:has(>a)) {
+  &.secondary-btn {
     color: var(--secondary-color);
     background: var(--primary-color);
+
+    &:hover:not(:has(>a)) {
+      color: var(--primary-color);
+      background: var(--secondary-color);
+    }
   }
 }
 
