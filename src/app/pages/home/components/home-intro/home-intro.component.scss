@@ -14,11 +14,21 @@
     p {
       font-size: 18px;
       color: var(--font-color);
-      margin-bottom: 25px;
+      line-height: 26px;
+
+      &:last-of-type {
+        margin-bottom: 25px;
+      }
     }
 
-    button {
-      font-size: 18px;
+    .buttons-container {
+      button {
+        margin-right: 15px;
+      }
+
+      a {
+        font-size: 18px;
+      }
     }
   }
 }
