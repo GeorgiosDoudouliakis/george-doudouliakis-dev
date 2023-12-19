@@ -13,7 +13,6 @@
   font-weight: 500;
   padding: 0;
   margin: 0;
-  color: var(--primary-color);
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -28,30 +27,6 @@ h1, h2, h3, h4 {
 
 button {
   border: none;
-}
-
-.primary-btn {
-  padding: var(--main-padding);
-  color: var(--primary-color);
-  background: var(--secondary-color);
-  transition: .4s ease-in-out;
-
-  &:hover:not(:has(>a)) {
-    color: var(--secondary-color);
-    background: var(--primary-color);
-  }
-}
-
-.secondary-btn {
-  padding: var(--main-padding);
-  color: var(--secondary-color);
-  background: var(--primary-color);
-  transition: .4s ease-in-out;
-
-  &:hover:not(:has(>a)) {
-    color: var(--primary-color);
-    background: var(--secondary-color);
-  }
 }
 
 li {
@@ -75,4 +50,32 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.primary-btn {
+  padding: var(--main-padding);
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+  transition: .4s ease-in-out;
+
+  &:hover:not(:has(>a)) {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+  }
+}
+
+.secondary-btn {
+  padding: var(--main-padding);
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  transition: .4s ease-in-out;
+
+  &:hover:not(:has(>a)) {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+  }
 }
