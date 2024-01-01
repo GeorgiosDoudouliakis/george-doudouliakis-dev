@@ -60,20 +60,6 @@ textarea:focus {
 
 .primary-btn {
   padding: var(--main-padding);
-  color: var(--primary-color);
-  background: var(--secondary-color);
-  outline: 2px solid var(--secondary-color);
-  outline-offset: 2px;
-  transition: .4s ease-in-out;
-
-  &:hover:not(:has(>a)) {
-    color: var(--secondary-color);
-    background: var(--primary-color);
-  }
-}
-
-.secondary-btn {
-  padding: var(--main-padding);
   color: var(--secondary-color);
   background: var(--primary-color);
   outline: 2px solid var(--primary-color);
@@ -83,5 +69,19 @@ textarea:focus {
   &:hover:not(:has(>a)) {
     color: var(--primary-color);
     background: var(--secondary-color);
+  }
+}
+
+.secondary-btn {
+  padding: var(--main-padding);
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+  transition: .4s ease-in-out;
+
+  &:hover:not(:has(>a)) {
+    color: var(--secondary-color);
+    background: var(--primary-color);
   }
 }
