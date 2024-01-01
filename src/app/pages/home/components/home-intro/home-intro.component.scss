@@ -24,33 +24,14 @@
     p {
       font-size: 18px;
       color: var(--font-color);
-      margin-bottom: 20px;
       line-height: 26px;
-    }
 
-    .technologies {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-
-      > .technology-container {
-        display: flex;
-        align-items: center;
+      &:first-of-type {
         margin-bottom: 10px;
-        margin-right: 20px;
+      }
 
-        > .technology-img-container {
-          width: 20px;
-          height: 20px;
-          margin-right: 5px;
-        }
-
-        > span {
-          font-size: 15px;
-          font-weight: 600;
-          color: var(--font-color);
-        }
+      &:last-of-type {
+        margin-bottom: 20px;
       }
     }
 
