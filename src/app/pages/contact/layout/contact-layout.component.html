@@ -1,0 +1,48 @@
+<div class="container" xmlns="http://www.w3.org/1999/html">
+  <h1>Get In Touch</h1>
+  <form [formGroup]="contactForm">
+    <div class="name-email-inputs-container">
+      <div class="form-input">
+        <div class="label-error-container">
+          <label for="name">Name</label>
+          @if (contactForm.get('name')?.dirty && contactForm.get('name')?.invalid) {
+            <span>(name is required)</span>
+          }
+        </div>
+        <input id="name" type="text" placeholder="Enter your name" formControlName="name" required />
+      </div>
+      <div class="form-input">
+        <div class="label-error-container">
+          <label for="email">Email</label>
+          @if (contactForm.get('email')?.dirty && contactForm.get('email')?.hasError('required')) {
+            <span>(email is required)</span>
+          }
+          @if (contactForm.get('email')?.dirty && contactForm.get('email')?.hasError('email')) {
+            <span>(not valid email)</span>
+          }
+        </div>
+        <input id="email" type="text" placeholder="Enter your email" formControlName="email" required />
+      </div>
+    </div>
+    <div class="form-input subject-input">
+      <div class="label-error-container">
+        <label for="subject">Subject</label>
+        @if (contactForm.get('subject')?.dirty && contactForm.get('subject')?.invalid) {
+          <span>(subject is required)</span>
+        }
+      </div>
+      <input id="subject" type="text" placeholder="Enter your subject" formControlName="subject" required />
+    </div>
+    <div class="form-input message-input">
+      <div class="label-error-container">
+        <label for="message">Message</label>
+        @if (contactForm.get('message')?.dirty && contactForm.get('message')?.invalid) {
+          <span>(message is required)</span>
+        }
+      </div>
+      <textarea id="message" placeholder="Enter your message" formControlName="message" required></textarea>
+    </div>
+
+    <button class="primary-btn {{ contactForm.invalid ? 'disabled' : '' }}" [disabled]="contactForm.invalid">Send</button>
+  </form>
+</div>
