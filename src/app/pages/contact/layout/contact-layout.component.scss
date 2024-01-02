@@ -71,8 +71,12 @@
     margin-bottom: 30px;
   }
 
-  .primary-btn.disabled {
-    pointer-events: none;
-    opacity: .7;
+  .primary-btn {
+    font-size: 18px;
+
+    &.disabled {
+      pointer-events: none;
+      opacity: .7;
+    }
   }
 }
