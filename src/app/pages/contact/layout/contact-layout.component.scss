@@ -3,8 +3,11 @@
     padding: var(--container-padding);
   }
 
-  h1 {
+  p {
+    text-align: center;
+    color: var(--font-color);
     margin-bottom: 30px;
+    line-height: 26px;
   }
 
   .name-email-inputs-container,
