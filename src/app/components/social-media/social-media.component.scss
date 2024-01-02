@@ -1,50 +1,18 @@
 :host {
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--primary-color);
-    padding: var(--container-padding);
+  display: flex;
+  justify-content: center;
+  padding: var(--container-padding);
 
-    > h2 {
-      margin-bottom: 15px;
-      color: var(--secondary-color);
+  > .img-container {
+    width: 28px;
+    height: 28px;
+
+    &:hover > img {
+      transform: scale(1.1);
     }
 
-    .social-media-container {
-      display: flex;
-
-      > .img-container {
-        position: relative;
-        width: 38px;
-        height: 38px;
-        padding: 5px;
-        background: var(--gray-color);
-
-        &::after {
-          position: absolute;
-          top: 2px;
-          left: 2px;
-          content: "";
-          width: 30px;
-          height: 30px;
-          border: 2px solid var(--primary-color);
-        }
-
-        > img {
-          position: relative;
-          z-index: 1;
-          transition: .4s ease-in-out;
-        }
-
-        &:hover > img {
-          transform: rotate(360deg) scale(1.2);
-        }
-
-        &:not(:last-of-type) {
-          margin-right: 10px;
-        }
-      }
+    &:not(:last-of-type) {
+      margin-right: 15px;
     }
   }
 }
