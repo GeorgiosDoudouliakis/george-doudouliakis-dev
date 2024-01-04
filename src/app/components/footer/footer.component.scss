@@ -1,16 +1,16 @@
 :host {
   footer {
-    background: var(--primary-color);
-
     .container {
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding: 20px 0;
+      padding: 32px 0;
+      border-top: 1px solid var(--primary-color);
       
       span,
       .social-media > a {
-        color: var(--secondary-color);
+        font-size: 18px;
+        color: var(--font-color);
       }
       
       span {
@@ -23,6 +23,10 @@
 
           &:last-of-type {
             margin-left: 10px;
+          }
+
+          &:hover {
+            color: var(--primary-color);
           }
         }
       }
