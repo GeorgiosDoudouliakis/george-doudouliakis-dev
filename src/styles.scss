@@ -3,7 +3,8 @@
   --primary-color: #4831D4;
   --secondary-color: #CCF381;
   --font-color: #6e5087;
-  --gray-color: #fafafa;
+  --body-color: #fafafa;
+  --error-color: #D6002B;
   --main-padding: 8px 16px;
   --container-padding: 40px 0;
 }
@@ -18,6 +19,7 @@
 
 body {
   height: 100%;
+  background: var(--body-color);
 }
 
 h1, h2, h3, h4 {
