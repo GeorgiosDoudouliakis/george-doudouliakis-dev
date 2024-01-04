@@ -1,13 +1,13 @@
-import { Component, OnInit, signal, WritableSignal } from '@angular/core';
 import { NgOptimizedImage } from "@angular/common";
-import { RouterLink, RouterLinkActive } from "@angular/router";
+import { Component, OnInit, signal, WritableSignal } from '@angular/core';
+import { RouterLink } from "@angular/router";
 import { MobileNavigationComponent } from "../mobile-navigation/mobile-navigation.component";
 import { NonMobileNavigationComponent } from "../non-mobile-navigation/non-mobile-navigation.component";
 
 @Component({
   selector: 'gd-header',
   standalone: true,
-  imports: [NgOptimizedImage, RouterLink, RouterLinkActive, MobileNavigationComponent, NonMobileNavigationComponent],
+  imports: [NgOptimizedImage, RouterLink, MobileNavigationComponent, NonMobileNavigationComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

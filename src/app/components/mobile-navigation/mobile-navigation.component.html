@@ -18,8 +18,6 @@
 
 <nav [ngClass]="{ 'active': isMobileMenuActive() }">
   <ul>
-    <li (click)="toggleMobileMenu()"><a routerLink="/" routerLinkActive="active-link"
-                                        [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
     <li (click)="toggleMobileMenu()"><a routerLink="about" routerLinkActive="active-link">About</a></li>
     <li (click)="toggleMobileMenu()"><a routerLink="experience" routerLinkActive="active-link">Experience</a></li>
     <li (click)="toggleMobileMenu()"><a routerLink="projects" routerLinkActive="active-link">Projects</a></li>
