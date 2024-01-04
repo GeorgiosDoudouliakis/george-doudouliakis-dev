@@ -1,0 +1,9 @@
+<span class="duration">{{ experience.date.from }} - {{ experience.date.to }}</span>
+<div class="experience-card">
+    <h2>{{ experience.jobTitle }} - <a [href]="experience.company.url" target="_blank" rel="noreferrer">{{ experience.company.name }}</a></h2>
+    <ul>
+    @for (technology of experience.technologies; track technology) {
+        <li>{{ technology }}</li>
+    }
+    </ul>
+</div>
