@@ -1,0 +1,15 @@
+:host {
+    p {
+        font-size: 18px;
+        color: var(--font-color);
+        line-height: 28px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 5px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
+    }
+}
