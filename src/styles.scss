@@ -8,11 +8,11 @@
   --border-color: #dcdcdc;
   --error-color: #D6002B;
   --main-padding: 8px 16px;
-  --container-padding: 40px 0;
+  --container-padding: 20px 0;
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -22,6 +22,11 @@
 body {
   height: 100%;
   background: var(--body-color);
+}
+
+h1 {
+  font-weight: 900;
+  color: var(--font-color);
 }
 
 h2, h3, h4 {
@@ -87,12 +92,16 @@ textarea:focus {
 }
 
 .page-header {
-  font-weight: 600;
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
-  color: var(--text-color);
-  background: var(--primary-color);
-  padding: 15px 0;
-  border-left: 10px solid var(--secondary-color);
-  border-right: 10px solid var(--secondary-color);
+  margin-bottom: 40px;
+
+  @media(min-width: 960px) {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+
+  @media(min-width: 1280px) {
+    font-size: 45px;
+  }
 }
