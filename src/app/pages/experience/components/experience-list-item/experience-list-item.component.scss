@@ -7,53 +7,63 @@
         margin-bottom: 40px;
     }
 
-    @media(min-width: 768px) {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .duration {
-        font-weight: 600;
-        padding: var(--main-padding);
-        margin-bottom: 25px;
-        color: var(--text-color);
-        background: var(--primary-color);
-
-        @media(min-width: 768px) {
-            width: 40%;
-            margin-bottom: 0;
-        }
-    }
-
     .experience-card {
-        h2 {
-            font-size: 20px;
-            text-align: left;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-            
-            a {
-                color: var(--primary-color);
+        padding: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
 
-                &:hover {
-                    color: var(--secondary-color);
-                    text-decoration: underline;
+        .experience-card-header { 
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+
+            @media(min-width: 768px) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .duration {
+                color: var(--font-color);
+            }
+        
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                line-height: 28px;
+
+                @media(min-width: 768px) {
+                    margin-bottom: 0;
+                }
+                
+                span, a {
+                    font-weight: 100;
+                }
+
+                a {
+                    font-style: italic;
+                    margin-left: 8px;
+                    color: var(--primary-color);
+                    
+                    &:hover {
+                        color: var(--secondary-color);
+                        text-decoration: underline;
+                    }
                 }
             }
         }
 
-        ul li {
-            color: var(--font-color);
+        ul {
+            padding-top: 15px;
 
-            &:not(:last-of-type) {
-                margin-bottom: 8px;
+            li {
+                color: var(--font-color);
+            
+                &:not(:last-of-type) {
+                    margin-bottom: 8px;
+                }
             }
-        }
-
-        @media(min-width: 768px) {
-            width: 60%;
-            margin-left: 32px;
         }
     }
 }
