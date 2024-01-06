@@ -7,6 +7,8 @@
   --text-color: #ffffff;
   --border-color: #dcdcdc;
   --error-color: #D6002B;
+  --card-background: rgb(255, 255, 255);
+  --card-box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
   --main-padding: 8px 16px;
   --container-padding: 20px 0;
 }
@@ -104,4 +106,12 @@ textarea:focus {
   @media(min-width: 1280px) {
     font-size: 45px;
   }
+}
+
+.card {
+  padding: 20px;
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: var(--card-box-shadow);
 }
