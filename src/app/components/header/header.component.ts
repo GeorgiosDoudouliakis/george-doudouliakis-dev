@@ -15,6 +15,6 @@ export class HeaderComponent implements OnInit {
   public isOnMobile: WritableSignal<boolean> = signal<boolean>(false);
 
   public ngOnInit(): void {
-    this.isOnMobile.set(window.matchMedia('(max-width: 767px)').matches);
+    this.isOnMobile.set(window.matchMedia('(max-width: 959px)').matches);
   }
 }
