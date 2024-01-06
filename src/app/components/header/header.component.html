@@ -1,6 +1,9 @@
 <header class="container">
   <a class="brand-container" routerLink="/">
-    <img class="responsive-img" ngSrc="/assets/images/brand_logo.png" alt="George Doudouliakis brand logo" width="70" height="70" [priority]="true">
+    <div class="img-container">
+      <img ngSrc="assets/images/george_doudouliakis.jpg" width="50" height="50" class="img-responsive" alt="George Doudouliakis" [priority]="true">
+    </div>
+    <span>George Doudouliakis</span>
   </a>
 
   @if (isOnMobile()) {
