@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from "@angular/forms";
 
 @Component({
-  selector: 'gd-contact-layout',
+  selector: 'gd-contact',
   standalone: true,
   imports: [FormsModule, ReactiveFormsModule],
-  templateUrl: './contact-layout.component.html',
-  styleUrl: './contact-layout.component.scss'
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.scss'
 })
-export class ContactLayoutComponent implements OnInit {
+export class ContactComponent implements OnInit {
   public contactForm: FormGroup;
 
   constructor(private _fb: FormBuilder) {}

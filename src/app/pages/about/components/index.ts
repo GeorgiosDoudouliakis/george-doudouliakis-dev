@@ -1,2 +1,2 @@
 export { AboutMeComponent } from "./about-me/about-me.component";
-export { SkillsComponent } from "./skills/skills.component";
+export { AboutSkillsComponent } from "./about-skills/about-skills.component";

@@ -2,13 +2,13 @@ import { Directive, ElementRef, Input, OnDestroy, OnInit, signal, WritableSignal
 import { interval, Subscription, takeWhile, tap } from "rxjs";
 
 @Directive({
-  selector: '[gdTypeWriter]',
+  selector: '[gdHomeTypeWriter]',
   standalone: true
 })
-export class TypeWriterDirective implements OnInit, OnDestroy {
+export class HomeTypeWriterDirective implements OnInit, OnDestroy {
   private _charIndex: WritableSignal<number> = signal<number>(0);
   private _interval$: Subscription;
-  @Input("gdTypeWriter") public wording: string;
+  @Input("gdHomeTypeWriter") public wording: string;
 
   constructor(private _element: ElementRef) {}
 

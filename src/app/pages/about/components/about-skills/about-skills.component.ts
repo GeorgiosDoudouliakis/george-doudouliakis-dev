@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'gd-skills',
+  selector: 'gd-about-skills',
   standalone: true,
   imports: [],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  templateUrl: './about-skills.component.html',
+  styleUrl: './about-skills.component.scss'
 })
-export class SkillsComponent {
+export class AboutSkillsComponent {
   public readonly skills: string[] = ["HTML", "CSS", "JavaScript", "TypeScript", "Angular 2+", "Git", "GitHub"];
 }

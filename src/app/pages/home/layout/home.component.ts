@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { HomeIntroComponent } from "../components";
 
 @Component({
-  selector: 'gd-home-layout',
+  selector: 'gd-home',
   standalone: true,
   imports: [HomeIntroComponent],
-  templateUrl: './home-layout.component.html',
-  styleUrl: './home-layout.component.scss'
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
-export class HomeLayoutComponent {}
+export class HomeComponent {}

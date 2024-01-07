@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectsLayoutComponent } from './projects-layout.component';
+import { AboutSkillsComponent } from './about-skills.component';
 
-describe('ProjectsLayoutComponent', () => {
-  let component: ProjectsLayoutComponent;
-  let fixture: ComponentFixture<ProjectsLayoutComponent>;
+describe('SkillsListComponent', () => {
+  let component: AboutSkillsComponent;
+  let fixture: ComponentFixture<AboutSkillsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProjectsLayoutComponent]
+      imports: [AboutSkillsComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(ProjectsLayoutComponent);
+
+    fixture = TestBed.createComponent(AboutSkillsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
