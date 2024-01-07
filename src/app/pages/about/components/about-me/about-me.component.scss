@@ -1,15 +1,16 @@
 :host {
     p {
-        font-size: 18px;
-        color: var(--font-color);
-        line-height: 28px;
+      font-size: 18px;
+      text-align: center;
+      color: var(--font-color);
+      line-height: 28px;
 
-        &:not(:last-of-type) {
-            margin-bottom: 5px;
-        }
+      &:not(:last-of-type) {
+          margin-bottom: 5px;
+      }
 
-        &:last-of-type {
-            margin-bottom: 30px;
-        }
+      &:last-of-type {
+          margin-bottom: 40px;
+      }
     }
 }
