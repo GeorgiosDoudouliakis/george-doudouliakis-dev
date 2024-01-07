@@ -16,7 +16,7 @@ export class HomeTypeWriterDirective implements OnInit, OnDestroy {
     this._interval$ = interval(80).pipe(
       tap(() => {
         this._element.nativeElement.innerHTML += this.wording.charAt(this._charIndex());
-        this._charIndex.update((prevValue) => prevValue + 1);
+        this._charIndex.update((prevIndex) => prevIndex + 1);
       }),
       takeWhile(() => this._charIndex() < this.wording.length)
     ).subscribe();
