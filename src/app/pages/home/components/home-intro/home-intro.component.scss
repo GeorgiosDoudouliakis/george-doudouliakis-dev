@@ -24,7 +24,7 @@
       font-size: 23px;
       margin-bottom: 15px;
       height: 32px;
-      
+
       @media(min-width: 450px) {
         font-size: 28px;
         height: 40px;
@@ -55,16 +55,9 @@
       }
     }
 
-    .buttons-container {
-      display: flex;
-
-      button {
-        margin-right: 15px;
-      }
-
-      a {
-        font-size: 18px;
-      }
+    button {
+      font-size: 18px;
+      margin-right: 15px;
     }
   }
 }
