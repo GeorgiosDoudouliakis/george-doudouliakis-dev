@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { AboutMeComponent } from '../components';
+import { AboutMeComponent, SkillsComponent } from '../components';
 
 @Component({
   selector: 'gd-about-layout',
   standalone: true,
-  imports: [AboutMeComponent],
+  imports: [AboutMeComponent, SkillsComponent],
   templateUrl: './about-layout.component.html',
   styleUrl: './about-layout.component.scss'
 })

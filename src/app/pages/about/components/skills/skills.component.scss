@@ -1,0 +1,35 @@
+:host {
+  p, li {
+    font-size: 18px;
+    color: var(--font-color);
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+
+    div {
+      &:first-of-type {
+        width: 50px;
+        height: 2px;
+        background: var(--primary-color);
+      }
+
+      &:last-of-type {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        border: 2px solid var(--secondary-color);
+        border-radius: 100%;
+      }
+    }
+  }
+}
