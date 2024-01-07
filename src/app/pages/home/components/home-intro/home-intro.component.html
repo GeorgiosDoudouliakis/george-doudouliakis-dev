@@ -5,6 +5,8 @@
   <p class="intro-text">Specialized in HTML, CSS, JavaScript, TypeScript and Angular 2+</p>
   <div class="buttons-container">
     <button><a routerLink="contact" class="primary-btn">Get In Touch</a></button>
-    <button class="secondary-btn">Show CV</button>
+    <button class="secondary-btn" (click)="showCV()">Show CV</button>
   </div>
 </div>
+
+<ng-template #cv></ng-template>
