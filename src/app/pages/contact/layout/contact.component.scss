@@ -61,9 +61,14 @@
 
     > input, > textarea {
       padding: 10px 0;
+      color: var(--primary-color);
       background: var(--body-color);
       border: none;
       border-bottom: 1px solid var(--primary-color);
+
+      &::placeholder {
+        color: var(--font-color);
+      }
     }
 
     > textarea {
