@@ -1,65 +1,70 @@
 :host {
-  p, li {
+  p, span {
     font-size: 18px;
   }
 
-  ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 40px;
+
+  .skill {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 20px 0;
+    border-radius: 100%;
 
-    li {
+    &:nth-child(1) > div {
+      background: #dd4b25;
+    }
+
+    &:nth-child(2) > div {
+      background: #214ce5;
+    }
+
+    &:nth-child(3) > div {
+      background: #cf649a;
+    }
+
+    &:nth-child(4) > div {
+      background: #e5a11f;
+    }
+
+    &:nth-child(5) > div {
+      background: #377cc8;
+    }
+
+    &:nth-child(6) > div {
+      background: #c50836;
+    }
+
+    &:nth-child(7) > div {
+      background: #f05539;
+    }
+
+    &:nth-child(8) > div {
+      background: #080808;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+      height: 90px;
+      margin-bottom: 15px;
+      border-radius: 100%;
+      box-shadow: var(--card-box-shadow);
+
+      > svg {
+        fill: var(--text-color);
+      }
+    }
+
+    span {
       font-weight: 600;
-      text-align: center;
-      width: 100%;
-
-      @media(min-width: 575px) {
-        width: 48%;
-      }
-
-      @media(min-width: 768px) {
-        width: 32%;
-      }
-
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(6),
-      &:nth-child(7) {
-        color: #fff;
-      }
-
-      &:nth-child(1) {
-        background: #dd4b25;
-      }
-
-      &:nth-child(2) {
-        background: #214ce5;
-      }
-
-      &:nth-child(3) {
-        background: #f7e025;
-        color: #000;
-      }
-
-      &:nth-child(4) {
-        background: #377cc8;
-      }
-
-      &:nth-child(5) {
-        background: #c50836;
-      }
-
-      &:nth-child(6) {
-        background: #f05539;
-      }
-
-      &:nth-child(7) {
-        background: #080808;
-      }
+      color: var(--font-color);
     }
   }
 }

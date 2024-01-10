@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './about-skills.component.html',
   styleUrl: './about-skills.component.scss'
 })
-export class AboutSkillsComponent {
-  public readonly skills: string[] = ["HTML", "CSS", "JavaScript", "TypeScript", "Angular 2+", "Git", "GitHub"];
-}
+export class AboutSkillsComponent {}
