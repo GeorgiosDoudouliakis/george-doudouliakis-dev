@@ -19,27 +19,15 @@
       align-items: center;
     }
 
-    .duration {
-      order: 0;
-      color: var(--text-color);
-      background: var(--secondary-color);
-      padding: var(--main-padding);
-      margin-bottom: 10px;
-      border-radius: 4px;
-
-      @media(min-width: 768px) {
-        order: initial;
-        margin-bottom: 0;
-      }
-    }
-
     h2 {
       order: 1;
       font-size: 20px;
+      text-align: center;
       line-height: 28px;
 
       @media(min-width: 768px) {
         order: initial;
+        text-align: initial;
         margin-bottom: 0;
       }
 
@@ -58,6 +46,22 @@
         }
       }
     }
+
+    .duration {
+      order: 0;
+      text-align: center;
+      color: var(--text-color);
+      background: var(--secondary-color);
+      padding: var(--main-padding);
+      margin-bottom: 10px;
+      border-radius: 4px;
+
+      @media(min-width: 768px) {
+        order: initial;
+        text-align: initial;
+        margin-bottom: 0;
+      }
+    }
   }
 
   ul {
@@ -65,8 +69,13 @@
 
     li {
       display: flex;
+      justify-content: center;
       align-items: center;
       color: var(--font-color);
+
+      @media(min-width: 768px) {
+        justify-content: flex-start;
+      }
 
       &:not(:last-of-type) {
         margin-bottom: 8px;
