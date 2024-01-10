@@ -1,16 +1,26 @@
 :host {
-    p {
-      font-size: 18px;
-      text-align: center;
-      color: var(--font-color);
-      line-height: 28px;
+  p, blockquote {
+    font-size: 18px;
+    text-align: center;
+    color: var(--font-color);
+    line-height: 28px;
+  }
 
-      &:not(:last-of-type) {
-          margin-bottom: 5px;
-      }
+  p:last-of-type,
+  blockquote {
+    margin-bottom: 40px;
+  }
 
-      &:last-of-type {
-          margin-bottom: 40px;
-      }
+  p {
+    &:not(:last-of-type) {
+        margin-bottom: 5px;
     }
+  }
+
+  blockquote {
+    font-style: italic;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
 }
