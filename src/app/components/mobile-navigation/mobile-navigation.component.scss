@@ -36,7 +36,7 @@
     width: 0;
     opacity: 0;
     height: calc(100vh - 70px);
-    background: var(--primary-color);
+    background: var(--body-color);
     z-index: 2;
     transition: .4s ease-in-out;
 
@@ -61,10 +61,11 @@
         font-weight: 600;
         text-align: center;
         padding: var(--main-padding);
-        color: var(--text-color);
+        color: var(--font-color);
 
         &.active-link {
-          background: var(--secondary-color);
+          color: var(--text-color);
+          background: var(--primary-color);
         }
       }
     }
