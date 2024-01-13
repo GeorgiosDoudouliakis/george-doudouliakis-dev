@@ -25,5 +25,10 @@ export const routes: Routes = [
     path: "contact",
     title: "Contact | George Doudouliakis - Front End Web Developer",
     loadComponent: () => import("./pages/contact/layout/contact.component").then(({ ContactComponent }) => ContactComponent),
+  },
+  {
+    path: "**",
+    title: "Page Not Found | George Doudouliakis - Front End Web Developer",
+    loadComponent: () => import("./pages/not-found/layout/not-found.component").then(({ NotFoundComponent }) => NotFoundComponent)
   }
 ];
