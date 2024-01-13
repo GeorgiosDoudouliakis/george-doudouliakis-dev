@@ -1,8 +1,4 @@
 :host {
-  p, span {
-    font-size: 18px;
-  }
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -62,8 +58,8 @@
     }
 
     span {
+      font-size: 18px;
       font-weight: 600;
-      color: var(--font-color);
     }
   }
 }

@@ -11,9 +11,8 @@
     position: relative;
     padding: var(--container-padding);
 
-    p, span, ul li {
+    ul li {
       color: var(--font-color);
-      line-height: 28px;
     }
 
     ul, .personal-data {

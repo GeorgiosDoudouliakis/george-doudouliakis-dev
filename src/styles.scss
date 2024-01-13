@@ -33,6 +33,18 @@ h2, h3, h4 {
   color: var(--primary-color);
 }
 
+p, blockquote {
+  font-size: 18px;
+}
+
+p, span, li, blockquote {
+  line-height: 28px;
+}
+
+p, span, blockquote {
+  color: var(--font-color);
+}
+
 button {
   border: none;
   cursor: pointer;
