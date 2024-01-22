@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
-  &:not(:last-of-type) {
-      margin-bottom: 40px;
-  }
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
 
   .experience-card-header {
     display: flex;
     flex-direction: column;
     padding-bottom: 15px;
+    margin-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
 
     @media(min-width: 768px) {
@@ -20,21 +20,17 @@
     }
 
     h2 {
-      order: 1;
       font-size: 20px;
       text-align: center;
+      margin-bottom: 10px;
 
       @media(min-width: 768px) {
-        order: initial;
         text-align: initial;
         margin-bottom: 0;
       }
 
-      span, a {
-        font-weight: 100;
-      }
-
       a {
+        font-weight: 100;
         font-style: italic;
         margin-left: 8px;
         color: var(--primary-color);
@@ -47,25 +43,23 @@
     }
 
     .duration {
-      order: 0;
+      font-size: 18px;
+      font-weight: bold;
       text-align: center;
-      color: var(--text-color);
-      background: var(--secondary-color);
-      padding: var(--main-padding);
-      margin-bottom: 10px;
-      border-radius: 4px;
+      color: var(--secondary-color);
 
       @media(min-width: 768px) {
-        order: initial;
+        font-size: 16px;
         text-align: initial;
+        padding: var(--main-padding);
         margin-bottom: 0;
+
+        border: 1px solid var(--secondary-color);
       }
     }
   }
 
   ul {
-    padding-top: 15px;
-
     li {
       display: flex;
       justify-content: center;
