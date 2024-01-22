@@ -69,6 +69,10 @@ textarea:focus {
   width: 90%;
   max-width: 1140px;
   margin: auto;
+
+  &.page-container {
+    padding: var(--container-padding);
+  }
 }
 
 .responsive-img {
