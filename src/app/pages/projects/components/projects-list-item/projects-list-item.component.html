@@ -1,14 +1,16 @@
-<div class="project-card-header">
-  <h2>{{ project.name }}</h2>
-  <span>{{ project.type }}</span>
-</div>
-<p>{{ project.description }}</p>
-<div class="technologies-container">
-  @for(technology of project.technologies; track technology) {
-    <span>#{{ technology }}</span>
-  }
-</div>
-<div class="buttons-container">
-  <button><a [href]="project.links.preview" class="primary-btn" target="_blank" rel="noopener">Preview</a></button>
-  <button><a [href]="project.links.github" class="secondary-btn" target="_blank" rel="noopener">Code</a></button>
+<div class="card">
+  <div class="card-header">
+    <h2>{{ project.name }}</h2>
+    <span class="card-header-right">{{ project.type }}</span>
+  </div>
+  <p>{{ project.description }}</p>
+  <div class="technologies-container">
+    @for(technology of project.technologies; track technology) {
+      <span>#{{ technology }}</span>
+    }
+  </div>
+  <div class="buttons-container">
+    <button><a [href]="project.links.preview" class="primary-btn" target="_blank" rel="noopener">Preview</a></button>
+    <button><a [href]="project.links.github" class="secondary-btn" target="_blank" rel="noopener">Code</a></button>
+  </div>
 </div>

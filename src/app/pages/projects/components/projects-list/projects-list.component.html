@@ -1,3 +1,5 @@
-@for(project of projects; track project.name) {
-  <gd-projects-list-item [project]="project" />
-}
+<div class="cards-container">
+  @for(project of projects; track project.name) {
+    <gd-projects-list-item [project]="project" />
+  }
+</div>
