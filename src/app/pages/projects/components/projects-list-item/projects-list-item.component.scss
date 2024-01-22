@@ -1,0 +1,83 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+
+  .project-card-header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+
+      @media(min-width: 768px) {
+        text-align: initial;
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: var(--secondary-color);
+
+      @media(min-width: 768px) {
+        font-size: 16px;
+        text-align: initial;
+        padding: var(--main-padding);
+        margin-bottom: 0;
+
+        border: 1px solid var(--secondary-color);
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media(min-width: 768px) {
+      text-align: initial;
+    }
+  }
+
+  .technologies-container {
+    margin: 0 auto 20px;
+
+    span:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    @media(min-width: 768px) {
+      text-align: initial;
+      margin: 0 0 20px;
+    }
+  }
+
+  .buttons-container {
+    margin: auto;
+
+    button {
+      font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+      margin: initial;
+    }
+  }
+}
