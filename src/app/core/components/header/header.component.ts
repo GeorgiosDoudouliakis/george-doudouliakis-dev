@@ -1,7 +1,8 @@
 import { NgOptimizedImage } from "@angular/common";
 import { Component, OnInit, signal, WritableSignal } from '@angular/core';
 import { RouterLink } from "@angular/router";
-import { MobileNavigationComponent, NonMobileNavigationComponent } from "../";
+import { MobileNavigationComponent } from "../mobile-navigation/mobile-navigation.component";
+import { NonMobileNavigationComponent } from "../non-mobile-navigation/non-mobile-navigation.component";
 
 @Component({
   selector: 'gd-header',
