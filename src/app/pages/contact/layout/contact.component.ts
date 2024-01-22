@@ -11,7 +11,7 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 export class ContactComponent implements OnInit {
   public contactForm: FormGroup;
 
-  constructor(private _fb: FormBuilder) {}
+  constructor(private readonly _fb: FormBuilder) {}
 
   public ngOnInit(): void {
     this._initializeContactForm();

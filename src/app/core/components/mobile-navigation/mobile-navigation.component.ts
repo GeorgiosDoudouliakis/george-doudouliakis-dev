@@ -19,7 +19,7 @@ import { NonMobileNavigationComponent } from "../";
 export class MobileNavigationComponent {
   public isMobileMenuActive: WritableSignal<boolean> = signal<boolean>(false);
 
-  constructor(private _window: Window) {}
+  constructor(private readonly _window: Window) {}
 
   public toggleMobileMenu(): void {
     this.isMobileMenuActive.set(!this.isMobileMenuActive());

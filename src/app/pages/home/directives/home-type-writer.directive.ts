@@ -10,7 +10,7 @@ export class HomeTypeWriterDirective implements OnInit, OnDestroy {
   private _interval$: Subscription;
   @Input("gdHomeTypeWriter") public wording: string;
 
-  constructor(private _element: ElementRef) {}
+  constructor(private readonly _element: ElementRef) {}
 
   public ngOnInit(): void {
     this._interval$ = interval(80).pipe(
