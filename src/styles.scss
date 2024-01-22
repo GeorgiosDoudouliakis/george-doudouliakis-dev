@@ -121,3 +121,13 @@ textarea:focus {
     font-size: 45px;
   }
 }
+
+.buttons-container {
+  display: flex;
+
+  button {
+    display: inline-flex;
+    font-size: 18px;
+    margin-right: 15px;
+  }
+}
