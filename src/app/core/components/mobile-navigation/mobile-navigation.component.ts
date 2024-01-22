@@ -1,7 +1,7 @@
 import { Component, signal, WritableSignal } from '@angular/core';
 import { NgClass } from "@angular/common";
 import { RouterLink, RouterLinkActive } from "@angular/router";
-import { NonMobileNavigationComponent } from "../non-mobile-navigation/non-mobile-navigation.component";
+import { NonMobileNavigationComponent } from "../";
 
 @Component({
   selector: 'gd-mobile-navigation',
