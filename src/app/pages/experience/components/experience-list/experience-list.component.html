@@ -1,3 +1,5 @@
-@for(experience of experiences; track experience.company.name) {
-    <gd-experience-list-item [experience]="experience" />
-}
+<div class="cards-container">
+  @for(experience of experiences; track experience.company.name) {
+      <gd-experience-list-item [experience]="experience" />
+  }
+</div>
