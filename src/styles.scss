@@ -5,6 +5,7 @@
   --font-color: #373a3c;
   --body-color: #ffffff;
   --text-color: #ffffff;
+  --card-shadow: 0 0 10px rgba(105, 105, 105, 0.2);
   --border-color: #dcdcdc;
   --error-color: #D6002B;
   --main-padding: 8px 16px;
@@ -163,6 +164,7 @@ textarea:focus {
   padding: 20px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
+  box-shadow: var(--card-shadow);
 
   .card-header {
     display: flex;
