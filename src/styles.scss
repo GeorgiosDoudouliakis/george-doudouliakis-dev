@@ -68,6 +68,20 @@ textarea:focus {
   outline: none;
 }
 
+/* On route change animation */
+::view-transition-new(main-element-transition) {
+  animation: slide-in-from-bottom .6s;
+}
+
+@keyframes slide-in-from-bottom {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 /* Reusable Classes */
 .container {
   width: 90%;
