@@ -188,10 +188,7 @@ textarea:focus {
       @media(min-width: 768px) {
         font-size: 16px;
         text-align: initial;
-        padding: var(--main-padding);
         margin-bottom: 0;
-
-        border: 1px solid var(--secondary-color);
       }
     }
   }
