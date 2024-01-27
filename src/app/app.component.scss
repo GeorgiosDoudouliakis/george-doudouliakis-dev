@@ -1,10 +1,10 @@
 :host {
    main {
-     min-height: calc(100vh - 250px);
+     min-height: calc(100vh - 235px);
      view-transition-name: main-element-transition;
 
      @media(min-width: 768px) {
-      min-height: calc(100vh - 214px);
+      min-height: calc(100vh - 190px);
      }
   }
 }
