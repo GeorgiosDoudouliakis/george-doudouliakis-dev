@@ -1,16 +1,16 @@
 :host {
   .card-header {
     h2 {
-      font-size: 20px;
+      span, a {
+        font-weight: 100;
+      }
 
       a {
-        font-weight: 100;
-        font-style: italic;
         margin-left: 8px;
-        color: var(--primary-color);
+        color: var(--font-color);
 
         &:hover {
-            color: var(--secondary-color);
+            color: var(--primary-color);
             text-decoration: underline;
         }
       }

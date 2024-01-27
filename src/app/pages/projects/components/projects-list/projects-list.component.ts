@@ -12,7 +12,7 @@ import { ProjectsListItemComponent } from "../projects-list-item/projects-list-i
 export class ProjectsListComponent {
   public readonly projects: Project[] = [
     {
-      name: "FORMULA ONE",
+      name: "Formula One",
       type: "Personal",
       description: "Website with stats about Formula One from 1950 to present. Includes: details for drivers and constructors, standings for each year from 1950 to present, circuits information, statistics showing points per circuit, map with the location of each circuit and schedule for current season. Made with Angular v14.2.3 and Ergast Developer API.",
       technologies: ["Angular", "Angular Material", "Open Layers"],
@@ -22,7 +22,7 @@ export class ProjectsListComponent {
       }
     },
     {
-      name: "MOVIE TRENDS",
+      name: "MovieTrends",
       type: "Personal",
       description: "Website for movies, tv series and actors. Includes: Search for movies, tv series and actors by keyword, top rated - popular - now playing - upcoming categories for movies, airing today - on air - popular - top rated categories for tv series and details for movies, tv series and actors. Made with Vue v3.2.13 and The Movie Database (TMDB) API.",
       technologies: ["Vue", "Tailwind"],
