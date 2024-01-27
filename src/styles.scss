@@ -48,6 +48,10 @@ p, span, blockquote {
 button {
   border: none;
   cursor: pointer;
+
+  &:has(> a) {
+    background: var(--body-color);
+  }
 }
 
 li {
@@ -87,24 +91,28 @@ textarea:focus {
   color: var(--text-color);
   background: var(--primary-color);
   border-radius: 4px;
+  outline: 1px solid var(--primary-color);
+  outline-offset: -1px;
   transition: .4s ease-in-out;
 
   &:hover:not(:has(>a)) {
-    background: var(--secondary-color);
+    color: var(--primary-color);
+    background: var(--body-color);
   }
 }
 
 .secondary-btn {
   padding: var(--main-padding);
-  color: var(--primary-color);
-  background: var(--body-color);
-  outline: 1px solid var(--primary-color);
-  outline-offset: -1px;
+  color: var(--text-color);
+  background: var(--secondary-color);
   border-radius: 4px;
+  outline: 1px solid var(--secondary-color);
+  outline-offset: -1px;
   transition: .4s ease-in-out;
 
   &:hover:not(:has(>a)) {
-    outline-style: dashed;
+    color: var(--secondary-color);
+    background: var(--body-color);
   }
 }
 
@@ -127,7 +135,10 @@ textarea:focus {
 
   button {
     display: inline-flex;
-    margin-right: 15px;
+
+    &:first-of-type {
+      margin-right: 10px;
+    }
   }
 }
 
