@@ -4,15 +4,7 @@
   align-items: center;
 
   @media(min-width: 600px) {
-    display: initial;
-  }
-
-  @media(min-width: 960px) {
-    width: 85%;
-  }
-
-  @media(min-width: 1140px) {
-    width: 70%;
+    display: block;
   }
 
   p {
