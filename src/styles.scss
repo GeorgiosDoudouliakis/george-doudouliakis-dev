@@ -105,7 +105,6 @@ textarea:focus {
   padding: var(--main-padding);
   color: var(--text-color);
   background: var(--primary-color);
-  border-radius: 4px;
   outline: 1px solid var(--primary-color);
   outline-offset: -1px;
   transition: .4s ease-in-out;
@@ -120,7 +119,6 @@ textarea:focus {
   padding: var(--main-padding);
   color: var(--text-color);
   background: var(--secondary-color);
-  border-radius: 4px;
   outline: 1px solid var(--secondary-color);
   outline-offset: -1px;
   transition: .4s ease-in-out;
@@ -163,7 +161,6 @@ textarea:focus {
   flex-wrap: nowrap;
   padding: 20px;
   border: 1px solid var(--border-color);
-  border-radius: 4px;
   box-shadow: var(--card-shadow);
 
   .card-header {
