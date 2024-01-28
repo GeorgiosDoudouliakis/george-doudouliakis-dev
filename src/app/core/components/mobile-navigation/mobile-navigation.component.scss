@@ -65,7 +65,7 @@
 
         &.active-link {
           color: var(--text-color);
-          background: var(--primary-color);
+          background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
         }
       }
     }
