@@ -1,4 +1,10 @@
 :host {
+  .card {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow);
+  }
+
   p {
     font-size: 16px;
     text-align: center;

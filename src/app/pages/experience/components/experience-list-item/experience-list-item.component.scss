@@ -1,4 +1,10 @@
 :host {
+  .card {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
   .card-header {
     h2 {
       span, a {
@@ -14,6 +20,10 @@
             text-decoration: underline;
         }
       }
+    }
+
+    .card-header-right {
+      font-style: italic;
     }
   }
 
